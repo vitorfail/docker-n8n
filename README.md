@@ -1,1 +1,0 @@
-# docker-n8n
