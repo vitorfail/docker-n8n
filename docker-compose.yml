@@ -25,7 +25,7 @@ services:
     image: devlikeapro/waha:latest
     platform: linux/amd64
     environment:
-      WHATSAPP_HOOK_URL: http://host.docker.internal:5678/webhook/webhook
+      WHATSAPP_HOOK_URL: http://31.97.246.118:5678/webhook/webhook
       WHATSAPP_DEFAULT_ENGINE: GOWS
       WHATSAPP_HOOK_EVENTS: message
     volumes:
@@ -38,11 +38,12 @@ services:
     image: n8nio/n8n:latest
     platform: linux/amd64
     environment:
-      WEBHOOK_URL: http://host.docker.internal:5678
+      WEBHOOK_URL: http://31.97.246.118:5678
       N8N_HOST: host.docker.internal
       GENERIC_TIMEZONE: America/Sao_Paulo
       N8N_LOG_LEVEL: debug
       N8N_COMMUNITY_PACKAGES_ALLOW_TOOL_USAGE: true
+      N8N_SECURE_COOKIE: false
     volumes:
       - n8n_data:/home/node/.n8n
     ports:
