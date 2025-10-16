@@ -31,8 +31,6 @@ services:
       WAHA_DASHBOARD_ENABLED: true
       WAHA_DASHBOARD_USERNAME: waha
       WAHA_DASHBOARD_PASSWORD: waha
-      WHATSAPP_SWAGGER_USERNAME: waha
-      WHATSAPP_SWAGGER_PASSWORD: waha
     volumes:
       - waha_sessions:/app/.sessions
       - waha_media:/app/.media
