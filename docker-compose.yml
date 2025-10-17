@@ -31,6 +31,7 @@ services:
       WAHA_DASHBOARD_NO_PASSWORD: true
       WHATSAPP_SWAGGER_NO_PASSWORD: true
       WAHA_API_URL: http://host.docker.internal:3000
+      WAHA_API_NO_AUTH: true
     volumes:
       - waha_sessions:/app/.sessions
       - waha_media:/app/.media
